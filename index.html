@@ -3,9 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Manrope:wght@400;600;800&family=Poppins:wght@400;600;800&family=Raleway:wght@300;700;900&family=Rubik:wght@300;400;500&family=Work+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/1910265785.js" crossorigin="anonymous"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'main-color': '#F85559',
+              }
+            }
+          }
+        }
+    </script>
+    <title>Fruit Brust</title>
+
+    <style>
+        .font-lato{
+            font-family: 'Lato', sans-serif;
+            font-family: 'Manrope', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Rubik', sans-serif;
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    
+<body class="font-lato">
+    <header>
+        <!-- <nav class="flex">
+           <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Shop</li>
+                <li>All fruits</li>
+           </ul>
+           <div>
+                <img src="images/logo.png" alt="logo">
+                <h1>Fruit Brust</h1>
+           </div>
+           <div>
+                <input type="text" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+           </div>
+        </nav> -->
+        <nav class=" px-2 container md:mx-auto md:bg-main-color md:text-white rounded-[600px] md:px-12 md:my-12 ">
+            <div class="navbar justify-between flex-row-reverse md:flex-row ">
+                <div class="navbar-start w-auto md:w-1/2">
+                    <ul class="hidden md:flex gap-7 text-lg">
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Shop</li>
+                        <li>All fruits</li>
+                    </ul>
+                  <div class="dropdown md:hidden">
+                    <label tabindex="0" class="btn btn-ghost btn-circle">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Homepage</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>About</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="navbar-center">
+                    <img class="w-7" src="images/logo.png" alt="logo">
+                    <a class="cursor-pointer normal-case text-xl font-bold md:text-4xl">Fruit Brust</a>
+                </div>
+                <div class="navbar-end hidden md:inline-flex">
+                    <div class="flex bg-white px-8 py-3 rounded-3xl">
+                        <input class="text-black outline-none" type="text" placeholder="Search">
+                        <button class="hidden md:block text-black">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 </body>
 </html>
