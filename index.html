@@ -55,21 +55,22 @@
         <nav class=" px-2 container md:mx-auto md:bg-main-color md:text-white rounded-[600px] md:px-12 md:my-12 ">
             <div class="navbar justify-between flex-row-reverse md:flex-row ">
                 <div class="navbar-start w-auto md:w-1/2">
-                    <ul class="hidden md:flex gap-7 text-lg">
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Shop</li>
-                        <li>All fruits</li>
+                    <ul class="hidden md:flex gap-7 text-lg cursor-pointer">
+                        <li><a>Home</a></li>
+                        <li><a>About us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All fruits</a></li>
                     </ul>
-                  <div class="dropdown md:hidden">
+                  <div class="dropdown dropdown-end md:hidden">
                     <label tabindex="0" class="btn btn-ghost btn-circle">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                     </label>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Homepage</a></li>
-                      <li><a>Portfolio</a></li>
-                      <li><a>About</a></li>
-                    </ul>
+                    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All fruits</a></li>
+                      </ul>
                   </div>
                 </div>
                 <div class="navbar-center">
